@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		057D67C728776FC700489228 /* Bayraklar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D67C628776FC700489228 /* Bayraklar.swift */; };
+		057D67C928776FD500489228 /* BayraklarDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D67C828776FD500489228 /* BayraklarDAO.swift */; };
+		05BE9A2028775E8500B997C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A1F28775E8500B997C3 /* AppDelegate.swift */; };
+		05BE9A2228775E8500B997C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A2128775E8500B997C3 /* SceneDelegate.swift */; };
+		05BE9A2428775E8500B997C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A2328775E8500B997C3 /* ViewController.swift */; };
+		05BE9A2728775E8500B997C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BE9A2528775E8500B997C3 /* Main.storyboard */; };
+		05BE9A2928775E8700B997C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BE9A2828775E8700B997C3 /* Assets.xcassets */; };
+		05BE9A2C28775E8700B997C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BE9A2A28775E8700B997C3 /* LaunchScreen.storyboard */; };
+		05BE9A3728775E8700B997C3 /* BayrakUygulamasiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A3628775E8700B997C3 /* BayrakUygulamasiTests.swift */; };
+		05BE9A4128775E8700B997C3 /* BayrakUygulamasiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A4028775E8700B997C3 /* BayrakUygulamasiUITests.swift */; };
+		05BE9A4328775E8700B997C3 /* BayrakUygulamasiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A4228775E8700B997C3 /* BayrakUygulamasiUITestsLaunchTests.swift */; };
+		05BE9A5028775F2200B997C3 /* QuizEkraniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A4F28775F2200B997C3 /* QuizEkraniViewController.swift */; };
+		05BE9A5428775F4D00B997C3 /* SonucEkraniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A5328775F4D00B997C3 /* SonucEkraniViewController.swift */; };
+		05BE9A57287767BB00B997C3 /* libsqlite3.tbd in Resources */ = {isa = PBXBuildFile; fileRef = 05BE9A56287767B600B997C3 /* libsqlite3.tbd */; };
+		05BE9A64287767CB00B997C3 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A5D287767CB00B997C3 /* FMDatabase.m */; };
+		05BE9A65287767CB00B997C3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A5E287767CB00B997C3 /* FMDatabasePool.m */; };
+		05BE9A66287767CB00B997C3 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A5F287767CB00B997C3 /* FMDatabaseAdditions.m */; };
+		05BE9A67287767CB00B997C3 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A61287767CB00B997C3 /* FMResultSet.m */; };
+		05BE9A68287767CB00B997C3 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9A63287767CB00B997C3 /* FMDatabaseQueue.m */; };
+		05BE9A6A287767D900B997C3 /* bayrakquiz.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 05BE9A69287767D900B997C3 /* bayrakquiz.sqlite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05BE9A3328775E8700B997C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05BE9A1428775E8500B997C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05BE9A1B28775E8500B997C3;
+			remoteInfo = BayrakUygulamasi;
+		};
+		05BE9A3D28775E8700B997C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05BE9A1428775E8500B997C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05BE9A1B28775E8500B997C3;
+			remoteInfo = BayrakUygulamasi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		057D67C628776FC700489228 /* Bayraklar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayraklar.swift; sourceTree = "<group>"; };
+		057D67C828776FD500489228 /* BayraklarDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayraklarDAO.swift; sourceTree = "<group>"; };
+		05BE9A1C28775E8500B997C3 /* BayrakUygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BayrakUygulamasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BE9A1F28775E8500B997C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05BE9A2128775E8500B997C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		05BE9A2328775E8500B997C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05BE9A2628775E8500B997C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05BE9A2828775E8700B997C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05BE9A2B28775E8700B997C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05BE9A2D28775E8700B997C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05BE9A3228775E8700B997C3 /* BayrakUygulamasiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayrakUygulamasiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BE9A3628775E8700B997C3 /* BayrakUygulamasiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayrakUygulamasiTests.swift; sourceTree = "<group>"; };
+		05BE9A3C28775E8700B997C3 /* BayrakUygulamasiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayrakUygulamasiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BE9A4028775E8700B997C3 /* BayrakUygulamasiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayrakUygulamasiUITests.swift; sourceTree = "<group>"; };
+		05BE9A4228775E8700B997C3 /* BayrakUygulamasiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayrakUygulamasiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05BE9A4F28775F2200B997C3 /* QuizEkraniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEkraniViewController.swift; sourceTree = "<group>"; };
+		05BE9A5328775F4D00B997C3 /* SonucEkraniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonucEkraniViewController.swift; sourceTree = "<group>"; };
+		05BE9A56287767B600B997C3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		05BE9A58287767CB00B997C3 /* BayrakUygulamasi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BayrakUygulamasi-Bridging-Header.h"; sourceTree = "<group>"; };
+		05BE9A59287767CB00B997C3 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		05BE9A5A287767CB00B997C3 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		05BE9A5B287767CB00B997C3 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		05BE9A5C287767CB00B997C3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		05BE9A5D287767CB00B997C3 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		05BE9A5E287767CB00B997C3 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		05BE9A5F287767CB00B997C3 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		05BE9A60287767CB00B997C3 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		05BE9A61287767CB00B997C3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		05BE9A62287767CB00B997C3 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		05BE9A63287767CB00B997C3 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		05BE9A69287767D900B997C3 /* bayrakquiz.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bayrakquiz.sqlite; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05BE9A1928775E8500B997C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BE9A2F28775E8700B997C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BE9A3928775E8700B997C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05BE9A1328775E8500B997C3 = {
+			isa = PBXGroup;
+			children = (
+				05BE9A1E28775E8500B997C3 /* BayrakUygulamasi */,
+				05BE9A3528775E8700B997C3 /* BayrakUygulamasiTests */,
+				05BE9A3F28775E8700B997C3 /* BayrakUygulamasiUITests */,
+				05BE9A1D28775E8500B997C3 /* Products */,
+				05BE9A55287767B500B997C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05BE9A1D28775E8500B997C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05BE9A1C28775E8500B997C3 /* BayrakUygulamasi.app */,
+				05BE9A3228775E8700B997C3 /* BayrakUygulamasiTests.xctest */,
+				05BE9A3C28775E8700B997C3 /* BayrakUygulamasiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05BE9A1E28775E8500B997C3 /* BayrakUygulamasi */ = {
+			isa = PBXGroup;
+			children = (
+				05BE9A69287767D900B997C3 /* bayrakquiz.sqlite */,
+				05BE9A1F28775E8500B997C3 /* AppDelegate.swift */,
+				05BE9A2128775E8500B997C3 /* SceneDelegate.swift */,
+				05BE9A2328775E8500B997C3 /* ViewController.swift */,
+				05BE9A2528775E8500B997C3 /* Main.storyboard */,
+				05BE9A2828775E8700B997C3 /* Assets.xcassets */,
+				05BE9A2A28775E8700B997C3 /* LaunchScreen.storyboard */,
+				05BE9A2D28775E8700B997C3 /* Info.plist */,
+				05BE9A60287767CB00B997C3 /* FMDatabase.h */,
+				05BE9A5D287767CB00B997C3 /* FMDatabase.m */,
+				05BE9A5C287767CB00B997C3 /* FMDatabaseAdditions.h */,
+				05BE9A5F287767CB00B997C3 /* FMDatabaseAdditions.m */,
+				05BE9A59287767CB00B997C3 /* FMDatabasePool.h */,
+				05BE9A5E287767CB00B997C3 /* FMDatabasePool.m */,
+				05BE9A5B287767CB00B997C3 /* FMDatabaseQueue.h */,
+				05BE9A63287767CB00B997C3 /* FMDatabaseQueue.m */,
+				05BE9A62287767CB00B997C3 /* FMDB.h */,
+				05BE9A5A287767CB00B997C3 /* FMResultSet.h */,
+				05BE9A61287767CB00B997C3 /* FMResultSet.m */,
+				05BE9A4F28775F2200B997C3 /* QuizEkraniViewController.swift */,
+				05BE9A5328775F4D00B997C3 /* SonucEkraniViewController.swift */,
+				05BE9A58287767CB00B997C3 /* BayrakUygulamasi-Bridging-Header.h */,
+				057D67C628776FC700489228 /* Bayraklar.swift */,
+				057D67C828776FD500489228 /* BayraklarDAO.swift */,
+			);
+			path = BayrakUygulamasi;
+			sourceTree = "<group>";
+		};
+		05BE9A3528775E8700B997C3 /* BayrakUygulamasiTests */ = {
+			isa = PBXGroup;
+			children = (
+				05BE9A3628775E8700B997C3 /* BayrakUygulamasiTests.swift */,
+			);
+			path = BayrakUygulamasiTests;
+			sourceTree = "<group>";
+		};
+		05BE9A3F28775E8700B997C3 /* BayrakUygulamasiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05BE9A4028775E8700B997C3 /* BayrakUygulamasiUITests.swift */,
+				05BE9A4228775E8700B997C3 /* BayrakUygulamasiUITestsLaunchTests.swift */,
+			);
+			path = BayrakUygulamasiUITests;
+			sourceTree = "<group>";
+		};
+		05BE9A55287767B500B997C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05BE9A56287767B600B997C3 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05BE9A1B28775E8500B997C3 /* BayrakUygulamasi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BE9A4628775E8700B997C3 /* Build configuration list for PBXNativeTarget "BayrakUygulamasi" */;
+			buildPhases = (
+				05BE9A1828775E8500B997C3 /* Sources */,
+				05BE9A1928775E8500B997C3 /* Frameworks */,
+				05BE9A1A28775E8500B997C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BayrakUygulamasi;
+			productName = BayrakUygulamasi;
+			productReference = 05BE9A1C28775E8500B997C3 /* BayrakUygulamasi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05BE9A3128775E8700B997C3 /* BayrakUygulamasiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BE9A4928775E8700B997C3 /* Build configuration list for PBXNativeTarget "BayrakUygulamasiTests" */;
+			buildPhases = (
+				05BE9A2E28775E8700B997C3 /* Sources */,
+				05BE9A2F28775E8700B997C3 /* Frameworks */,
+				05BE9A3028775E8700B997C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05BE9A3428775E8700B997C3 /* PBXTargetDependency */,
+			);
+			name = BayrakUygulamasiTests;
+			productName = BayrakUygulamasiTests;
+			productReference = 05BE9A3228775E8700B997C3 /* BayrakUygulamasiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05BE9A3B28775E8700B997C3 /* BayrakUygulamasiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BE9A4C28775E8700B997C3 /* Build configuration list for PBXNativeTarget "BayrakUygulamasiUITests" */;
+			buildPhases = (
+				05BE9A3828775E8700B997C3 /* Sources */,
+				05BE9A3928775E8700B997C3 /* Frameworks */,
+				05BE9A3A28775E8700B997C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05BE9A3E28775E8700B997C3 /* PBXTargetDependency */,
+			);
+			name = BayrakUygulamasiUITests;
+			productName = BayrakUygulamasiUITests;
+			productReference = 05BE9A3C28775E8700B997C3 /* BayrakUygulamasiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05BE9A1428775E8500B997C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					05BE9A1B28775E8500B997C3 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+					05BE9A3128775E8700B997C3 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 05BE9A1B28775E8500B997C3;
+					};
+					05BE9A3B28775E8700B997C3 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 05BE9A1B28775E8500B997C3;
+					};
+				};
+			};
+			buildConfigurationList = 05BE9A1728775E8500B997C3 /* Build configuration list for PBXProject "BayrakUygulamasi" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05BE9A1328775E8500B997C3;
+			productRefGroup = 05BE9A1D28775E8500B997C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05BE9A1B28775E8500B997C3 /* BayrakUygulamasi */,
+				05BE9A3128775E8700B997C3 /* BayrakUygulamasiTests */,
+				05BE9A3B28775E8700B997C3 /* BayrakUygulamasiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05BE9A1A28775E8500B997C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BE9A57287767BB00B997C3 /* libsqlite3.tbd in Resources */,
+				05BE9A2C28775E8700B997C3 /* LaunchScreen.storyboard in Resources */,
+				05BE9A2928775E8700B997C3 /* Assets.xcassets in Resources */,
+				05BE9A6A287767D900B997C3 /* bayrakquiz.sqlite in Resources */,
+				05BE9A2728775E8500B997C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BE9A3028775E8700B997C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BE9A3A28775E8700B997C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05BE9A1828775E8500B997C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BE9A2428775E8500B997C3 /* ViewController.swift in Sources */,
+				05BE9A2028775E8500B997C3 /* AppDelegate.swift in Sources */,
+				05BE9A2228775E8500B997C3 /* SceneDelegate.swift in Sources */,
+				05BE9A64287767CB00B997C3 /* FMDatabase.m in Sources */,
+				05BE9A65287767CB00B997C3 /* FMDatabasePool.m in Sources */,
+				05BE9A68287767CB00B997C3 /* FMDatabaseQueue.m in Sources */,
+				05BE9A5428775F4D00B997C3 /* SonucEkraniViewController.swift in Sources */,
+				05BE9A67287767CB00B997C3 /* FMResultSet.m in Sources */,
+				05BE9A5028775F2200B997C3 /* QuizEkraniViewController.swift in Sources */,
+				05BE9A66287767CB00B997C3 /* FMDatabaseAdditions.m in Sources */,
+				057D67C928776FD500489228 /* BayraklarDAO.swift in Sources */,
+				057D67C728776FC700489228 /* Bayraklar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BE9A2E28775E8700B997C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BE9A3728775E8700B997C3 /* BayrakUygulamasiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BE9A3828775E8700B997C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BE9A4128775E8700B997C3 /* BayrakUygulamasiUITests.swift in Sources */,
+				05BE9A4328775E8700B997C3 /* BayrakUygulamasiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05BE9A3428775E8700B997C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05BE9A1B28775E8500B997C3 /* BayrakUygulamasi */;
+			targetProxy = 05BE9A3328775E8700B997C3 /* PBXContainerItemProxy */;
+		};
+		05BE9A3E28775E8700B997C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05BE9A1B28775E8500B997C3 /* BayrakUygulamasi */;
+			targetProxy = 05BE9A3D28775E8700B997C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05BE9A2528775E8500B997C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05BE9A2628775E8500B997C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05BE9A2A28775E8700B997C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05BE9A2B28775E8700B997C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05BE9A4428775E8700B997C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05BE9A4528775E8700B997C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05BE9A4728775E8700B997C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BayrakUygulamasi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hu-dahan-Altun.BayrakUygulamasi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BayrakUygulamasi/BayrakUygulamasi-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05BE9A4828775E8700B997C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BayrakUygulamasi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hu-dahan-Altun.BayrakUygulamasi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BayrakUygulamasi/BayrakUygulamasi-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05BE9A4A28775E8700B997C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hu-dahan-Altun.BayrakUygulamasiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BayrakUygulamasi.app/BayrakUygulamasi";
+			};
+			name = Debug;
+		};
+		05BE9A4B28775E8700B997C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hu-dahan-Altun.BayrakUygulamasiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BayrakUygulamasi.app/BayrakUygulamasi";
+			};
+			name = Release;
+		};
+		05BE9A4D28775E8700B997C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hu-dahan-Altun.BayrakUygulamasiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BayrakUygulamasi;
+			};
+			name = Debug;
+		};
+		05BE9A4E28775E8700B997C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hu-dahan-Altun.BayrakUygulamasiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BayrakUygulamasi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05BE9A1728775E8500B997C3 /* Build configuration list for PBXProject "BayrakUygulamasi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BE9A4428775E8700B997C3 /* Debug */,
+				05BE9A4528775E8700B997C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BE9A4628775E8700B997C3 /* Build configuration list for PBXNativeTarget "BayrakUygulamasi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BE9A4728775E8700B997C3 /* Debug */,
+				05BE9A4828775E8700B997C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BE9A4928775E8700B997C3 /* Build configuration list for PBXNativeTarget "BayrakUygulamasiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BE9A4A28775E8700B997C3 /* Debug */,
+				05BE9A4B28775E8700B997C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BE9A4C28775E8700B997C3 /* Build configuration list for PBXNativeTarget "BayrakUygulamasiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BE9A4D28775E8700B997C3 /* Debug */,
+				05BE9A4E28775E8700B997C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05BE9A1428775E8500B997C3 /* Project object */;
+}

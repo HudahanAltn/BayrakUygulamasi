@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zNg-DI-On0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ana Ekran-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Ana Ekran" id="BYZ-38-t0r" customClass="ViewController" customModule="BayrakUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz'e Hoşgeldiniz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcT-lq-2au">
+                                <rect key="frame" x="30" y="138" width="344" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yfd-2K-jzv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaR-g3-jKH">
+                                <rect key="frame" x="70" y="528" width="274" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="G0m-bn-9x1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Başla">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Ze5-tp-Up4" kind="show" id="IYn-tv-s3q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RaR-g3-jKH" secondAttribute="trailing" constant="70" id="IOm-En-exm"/>
+                            <constraint firstItem="hcT-lq-2au" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="NOx-TN-4Yk"/>
+                            <constraint firstItem="hcT-lq-2au" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eM3-P1-JnS"/>
+                            <constraint firstItem="RaR-g3-jKH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="ecP-ex-l5Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hcT-lq-2au" secondAttribute="trailing" constant="40" id="mwY-nm-zvv"/>
+                            <constraint firstItem="RaR-g3-jKH" firstAttribute="top" secondItem="hcT-lq-2au" secondAttribute="bottom" constant="350" id="ojJ-Ny-6h8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Anasayfa" id="EM4-JW-Dn0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="81.696428571428569"/>
+        </scene>
+        <!--Quiz Ekrani-->
+        <scene sceneID="vq8-zL-ia9">
+            <objects>
+                <viewController id="Ze5-tp-Up4" customClass="QuizEkraniViewController" customModule="BayrakUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uNT-i0-sKL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doğru : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-T2-Rch">
+                                <rect key="frame" x="50" y="138" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vj5-EK-djv"/>
+                                    <constraint firstAttribute="width" constant="90" id="hen-sA-psg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yanlış :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAZ-7n-VZC">
+                                <rect key="frame" x="274" y="138" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JiR-2b-rdD"/>
+                                    <constraint firstAttribute="width" constant="90" id="bQP-i5-HDS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YI-j8-H28">
+                                <rect key="frame" x="150" y="260" width="114" height="35"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="1. Soru">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemPurpleColor"/>
+                                            <font key="NSFont" size="24" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turkiye" translatesAutoresizingMaskIntoConstraints="NO" id="JMX-bX-3TH">
+                                <rect key="frame" x="96" y="374.5" width="222" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="5zw-m1-rQ4"/>
+                                    <constraint firstAttribute="height" constant="147" id="aR4-ST-2tw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFW-1D-a1i">
+                                <rect key="frame" x="70" y="548" width="274" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="RU9-xl-wXW"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ayf-aR-roI"/>
+                                    <constraint firstAttribute="height" constant="50" id="i1g-x6-2r2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button A">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonA:" destination="Ze5-tp-Up4" eventType="touchUpInside" id="Shi-8L-smT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCZ-oo-Yxb">
+                                <rect key="frame" x="70" y="613" width="274" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hui-jU-BdW"/>
+                                    <constraint firstAttribute="width" constant="274" id="xry-LY-Ef9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="zRV-zd-OU6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button B">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonB:" destination="Ze5-tp-Up4" eventType="touchUpInside" id="eaU-Sm-vDZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hju-3O-6OT">
+                                <rect key="frame" x="70" y="678" width="274" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="55i-3f-7xj"/>
+                                    <constraint firstAttribute="height" constant="50" id="LGl-ij-6So"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="SSd-vP-mgt"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button C">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonC:" destination="Ze5-tp-Up4" eventType="touchUpInside" id="FV0-dw-st7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rz4-X8-KzL">
+                                <rect key="frame" x="70" y="743" width="274" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="K8J-jF-CsR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="REm-Yi-1Xe"/>
+                                    <constraint firstAttribute="height" constant="50" id="W9c-yx-kD0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button D">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonD:" destination="Ze5-tp-Up4" eventType="touchUpInside" id="a9s-t4-0sf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PfT-60-uSA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EhM-T2-Rch" firstAttribute="leading" secondItem="PfT-60-uSA" secondAttribute="leading" constant="50" id="0Nl-NM-bzN"/>
+                            <constraint firstItem="xAZ-7n-VZC" firstAttribute="top" secondItem="PfT-60-uSA" secondAttribute="top" constant="50" id="0vT-QD-ayB"/>
+                            <constraint firstItem="JMX-bX-3TH" firstAttribute="top" secondItem="5YI-j8-H28" secondAttribute="bottom" constant="79.5" id="568-d1-CIr"/>
+                            <constraint firstItem="5YI-j8-H28" firstAttribute="top" secondItem="PfT-60-uSA" secondAttribute="top" constant="172" id="5mJ-LF-uPk"/>
+                            <constraint firstItem="rz4-X8-KzL" firstAttribute="top" secondItem="hju-3O-6OT" secondAttribute="bottom" constant="15" id="6eh-YI-oEn"/>
+                            <constraint firstItem="PfT-60-uSA" firstAttribute="trailing" secondItem="hju-3O-6OT" secondAttribute="trailing" constant="70" id="7lq-Hz-fLc"/>
+                            <constraint firstItem="vFW-1D-a1i" firstAttribute="top" secondItem="JMX-bX-3TH" secondAttribute="bottom" constant="26.5" id="8eK-td-3DM"/>
+                            <constraint firstItem="PfT-60-uSA" firstAttribute="trailing" secondItem="xAZ-7n-VZC" secondAttribute="trailing" constant="50" id="8iu-MX-YOP"/>
+                            <constraint firstItem="PfT-60-uSA" firstAttribute="trailing" secondItem="rz4-X8-KzL" secondAttribute="trailing" constant="70" id="Hd9-QJ-mU8"/>
+                            <constraint firstItem="wCZ-oo-Yxb" firstAttribute="top" secondItem="vFW-1D-a1i" secondAttribute="bottom" constant="15" id="Usg-aw-AaL"/>
+                            <constraint firstItem="hju-3O-6OT" firstAttribute="leading" secondItem="PfT-60-uSA" secondAttribute="leading" constant="70" id="c2a-rx-OBh"/>
+                            <constraint firstItem="hju-3O-6OT" firstAttribute="top" secondItem="wCZ-oo-Yxb" secondAttribute="bottom" constant="15" id="c6e-aE-2b2"/>
+                            <constraint firstItem="PfT-60-uSA" firstAttribute="trailing" secondItem="wCZ-oo-Yxb" secondAttribute="trailing" constant="70" id="dq4-V1-Zuu"/>
+                            <constraint firstItem="5YI-j8-H28" firstAttribute="leading" secondItem="PfT-60-uSA" secondAttribute="leading" constant="150" id="fHz-AL-X0q"/>
+                            <constraint firstItem="EhM-T2-Rch" firstAttribute="top" secondItem="PfT-60-uSA" secondAttribute="top" constant="50" id="lYv-WI-KT3"/>
+                            <constraint firstItem="rz4-X8-KzL" firstAttribute="leading" secondItem="PfT-60-uSA" secondAttribute="leading" constant="70" id="mfy-bs-1Gf"/>
+                            <constraint firstItem="JMX-bX-3TH" firstAttribute="centerY" secondItem="uNT-i0-sKL" secondAttribute="centerY" id="oJC-SP-GOS"/>
+                            <constraint firstItem="5YI-j8-H28" firstAttribute="centerX" secondItem="uNT-i0-sKL" secondAttribute="centerX" id="rJT-hz-jqe"/>
+                            <constraint firstItem="JMX-bX-3TH" firstAttribute="centerX" secondItem="uNT-i0-sKL" secondAttribute="centerX" id="rfH-nE-oN4"/>
+                            <constraint firstItem="PfT-60-uSA" firstAttribute="trailing" secondItem="vFW-1D-a1i" secondAttribute="trailing" constant="70" id="t2d-fY-0mT"/>
+                            <constraint firstItem="PfT-60-uSA" firstAttribute="trailing" secondItem="5YI-j8-H28" secondAttribute="trailing" constant="150" id="xJA-0e-9xV"/>
+                            <constraint firstItem="vFW-1D-a1i" firstAttribute="leading" secondItem="PfT-60-uSA" secondAttribute="leading" constant="70" id="xYQ-Uu-8fj"/>
+                            <constraint firstItem="wCZ-oo-Yxb" firstAttribute="leading" secondItem="PfT-60-uSA" secondAttribute="leading" constant="70" id="zdK-pq-hVu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quiz Ekrani" id="Smc-XA-uf6"/>
+                    <connections>
+                        <outlet property="buttonA" destination="vFW-1D-a1i" id="nXb-U6-TIA"/>
+                        <outlet property="buttonB" destination="wCZ-oo-Yxb" id="U0q-o2-Pfk"/>
+                        <outlet property="buttonC" destination="hju-3O-6OT" id="y4N-eV-HrK"/>
+                        <outlet property="buttonD" destination="rz4-X8-KzL" id="ZSL-Yw-YEG"/>
+                        <outlet property="imageViewBayrak" destination="JMX-bX-3TH" id="ege-V3-luN"/>
+                        <outlet property="labelDoğru" destination="EhM-T2-Rch" id="OTa-bu-irU"/>
+                        <outlet property="labelSoruSayisi" destination="5YI-j8-H28" id="JCd-1t-TRo"/>
+                        <outlet property="labelYanlıs" destination="xAZ-7n-VZC" id="J17-el-4xh"/>
+                        <segue destination="duy-wx-enG" kind="show" identifier="toSonuc" id="tEb-X5-v7y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0IK-8X-tge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839.1304347826087" y="81.696428571428569"/>
+        </scene>
+        <!--Sonuç Ekranı-->
+        <scene sceneID="PqV-s4-3pw">
+            <objects>
+                <viewController id="duy-wx-enG" customClass="SonucEkraniViewController" customModule="BayrakUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="13p-lb-40j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Doğru 1 Yanlış" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yV-zg-QIf">
+                                <rect key="frame" x="30" y="188" width="354" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%25 Başarı" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRz-f6-UkS">
+                                <rect key="frame" x="30" y="313.5" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ayF-AE-16h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1x-pv-leE">
+                                <rect key="frame" x="70" y="553.5" width="274" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="3G7-tI-AxV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="274" id="S8m-Hf-d1s"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="WuI-XJ-KJM"/>
+                                    <constraint firstAttribute="width" constant="274" id="qFk-H2-P9k"/>
+                                    <constraint firstAttribute="height" constant="50" id="yj5-oW-NZq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Tekrar Dene">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tekrarDene:" destination="duy-wx-enG" eventType="touchUpInside" id="RZO-0h-nRE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zzf-9F-gZB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n1x-pv-leE" firstAttribute="top" secondItem="TRz-f6-UkS" secondAttribute="bottom" constant="200" id="4aB-Y5-TFC"/>
+                            <constraint firstItem="Zzf-9F-gZB" firstAttribute="trailing" secondItem="n1x-pv-leE" secondAttribute="trailing" constant="70" id="5DA-6h-JEP"/>
+                            <constraint firstItem="Zzf-9F-gZB" firstAttribute="trailing" secondItem="0yV-zg-QIf" secondAttribute="trailing" constant="30" id="DhA-cu-rOz"/>
+                            <constraint firstItem="Zzf-9F-gZB" firstAttribute="trailing" secondItem="TRz-f6-UkS" secondAttribute="trailing" constant="30" id="EAC-Ef-XE0"/>
+                            <constraint firstItem="0yV-zg-QIf" firstAttribute="top" secondItem="Zzf-9F-gZB" secondAttribute="top" constant="100" id="EEU-NQ-Uuw"/>
+                            <constraint firstItem="n1x-pv-leE" firstAttribute="leading" secondItem="Zzf-9F-gZB" secondAttribute="leading" constant="70" id="ESa-Eo-pHI"/>
+                            <constraint firstItem="TRz-f6-UkS" firstAttribute="top" secondItem="0yV-zg-QIf" secondAttribute="bottom" constant="100" id="Ihj-eF-Tld"/>
+                            <constraint firstItem="TRz-f6-UkS" firstAttribute="leading" secondItem="Zzf-9F-gZB" secondAttribute="leading" constant="30" id="dIo-t5-qgL"/>
+                            <constraint firstItem="0yV-zg-QIf" firstAttribute="leading" secondItem="Zzf-9F-gZB" secondAttribute="leading" constant="30" id="tIH-P4-M5o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sonuç Ekranı" id="IMB-b6-YR4"/>
+                    <connections>
+                        <outlet property="basarıLabel" destination="TRz-f6-UkS" id="Uaj-Y5-vqW"/>
+                        <outlet property="sonucLabel" destination="0yV-zg-QIf" id="puh-ye-C3j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKB-MQ-PQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2766.666666666667" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w23-GC-17B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zNg-DI-On0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e71-X3-5l5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="htW-vo-LWP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhE-lG-wLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="turkiye" width="300" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
